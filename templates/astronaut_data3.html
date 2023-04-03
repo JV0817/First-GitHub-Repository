@@ -1,0 +1,106 @@
+{% extends "astronaut_layout.html" %}
+
+{% set active_page = "statistics" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+        <h1>
+        Statistics
+        </h1>
+        <br><br>
+        <script type="text/javascript">
+
+            window.onload = function () {
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    title:{
+                        text: "People that went to space"              
+                    },
+                    data: [              
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "column",
+                        dataPoints: [
+                            { label: "1959",  y: 11  },
+                            { label: "1960", y: 21  },
+                            { label: "1961", y: 0  },
+                            { label: "1962",  y: 26  },
+                            { label: "1963",  y: 29  },
+                            { label: "1964",  y: 4  },
+                            { label: "1965",  y: 15  },
+                            { label: "1966",  y: 28  },
+                            { label: "1967",  y: 23  },
+                            { label: "1968",  y: 20  },
+                            { label: "1969",  y: 15  },
+                            { label: "1970",  y: 12  },
+                            { label: "1971",  y: 0  },
+                            { label: "1972",  y: 4  },
+                            { label: "1973",  y: 13  },
+                            { label: "1974",  y: 0  },
+                            { label: "1975",  y: 0  },
+                            { label: "1976",  y: 17  },
+                            { label: "1977",  y: 2  },
+                            { label: "1978",  y: 137  },
+                            { label: "1979",  y: 2  },
+                            { label: "1980",  y: 66  },
+                            { label: "1981",  y: 0  },
+                            { label: "1982",  y: 6  },
+                            { label: "1983",  y: 16  },
+                            { label: "1984",  y: 65  },
+                            { label: "1985",  y: 80  },
+                            { label: "1986",  y: 0  },
+                            { label: "1987",  y: 75  },
+                            { label: "1988",  y: 2  },
+                            { label: "1989",  y: 23  },
+                            { label: "1990",  y: 100  },
+                            { label: "1991",  y: 2  },
+                            { label: "1992",  y: 92  },
+                            { label: "1993",  y: 0  },
+                            { label: "1994",  y: 26  },
+                            { label: "1995",  y: 38  },
+                            { label: "1996",  y: 90  },
+                            { label: "1997",  y: 24  },
+                            { label: "1998",  y: 59  },
+                            { label: "1999",  y: 4  },
+                            { label: "2000",  y: 36  },
+                            { label: "2001",  y: 1  },
+                            { label: "2002",  y: 0  },
+                            { label: "2003",  y: 15  },
+                            { label: "2004",  y: 18  },
+                            { label: "2005",  y: 3  },
+                            { label: "2006",  y: 11  },
+                            { label: "2007",  y: 0  },
+                            { label: "2008",  y: 5  },
+                            { label: "2009",  y: 20  },
+                            { label: "2010",  y: 2  },
+                            { label: "2011",  y: 0  },
+                            { label: "2012",  y: 3  },
+                            { label: "2013",  y: 8  },
+                            { label: "2014",  y: 0  },
+                            { label: "2015",  y: 0  },
+                            { label: "2016",  y: 0  },
+                            { label: "2017",  y: 0  },
+                            { label: "2018",  y: 1  },
+                        ]
+                    }
+                    ]
+                });
+                chart.render();
+            }
+        </script>
+        
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        
+        <br><br>
+        <p>
+            Looking at the graph, through the increase in people going to space through the 1960s and 70s, was caused from the Space Race, which was a competition during the Cold War between the United States and Soviet Union to see who had superior capability to reach space. The first person to actually go to space was Yuri Gagarin from the USSR, launching in the Vostok I on April 12th, 1961. 
+        </p>
+        <br>
+        <p>
+            With the USSR gaining multiple firsts in the competition, along with the first satellite sent into orbit on October 4, 1957, the United States wanted to go further beyond. On May 25th, 1961, president Kennedy in the United States asked Congress to begin trying to have someone land on the moon and come back safely. In July, 1969, the spacecraft Apollo II had been the first to land on the moon. With the Russians failing, they stepped down on that challenge and focused on developing space stations and landing on Venus and Mars. The United States would continue to send more Apollo crews to the moon in the future and explore other things in space with robots, like other planets and deep space environments.
+        </p>
+        <p>
+            Link to given information: <a href = "https://en.wikipedia.org/wiki/Space_Race">Here</a>
+        </p>
+{% endblock %}

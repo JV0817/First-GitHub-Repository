@@ -1,0 +1,30 @@
+{% extends "astronaut_layout.html" %}
+
+{% set active_page = "data" %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+        <h1>
+        Data
+        </h1>
+        <p>
+            Ever since going to space has been possible, many people have gone to study and conduct experiments
+            on how different things, like fluids, act in the environment. The people that have gone to space have helped
+            us better understand space and how it works.
+        </p>
+        <p>
+            Here you will be able to enter a year to see who had gone to space then.
+        </p>
+        <form action='/question'>
+            <label for="yearfinder">Enter a year from 1959 to 2018.</label>
+            <br>
+            <input type="text" name="yearfind" id="yearfind" required>
+            <br>
+            <input type="submit">
+            <br><br>
+        </form>
+        <p>
+        Number of people that went to space in your year: {{ astronaut }}
+        </p>
+{% endblock %}

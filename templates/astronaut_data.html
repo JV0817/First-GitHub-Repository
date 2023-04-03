@@ -1,0 +1,26 @@
+{% extends "astronaut_layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+        <h1>Astronauts</h1>
+        <p>
+            The dataset I have chosen to do is about astronauts. The dataset shows a huge list of people that have gone to space, 
+            showing 500+ people since 2019, giving you their names, military status, birth year, and much more information about them and when they went to space.
+        </p>
+        <br><br>
+        <p>
+            The data will show you many different things about each astronaut and how long they were in space. In the code, however,
+            there can be some missing data points. These are used when the data shows what rocket an astronaut had returned it. If
+            they did return to earth, it would show the type of rocket used, but if they hadn't, it would show 'not completed yet' to show that they haven't returned.
+        </p>
+        <br><br>
+        <p>
+            Some examples of what astronauts do while in space is run experiments and tests while in space. An example of what
+            they test in space is how fluids react in the environment. Using the data collected from seeing fluids in zero gravity
+            places, it can help develop medical devices, systems to transfer heat, and many more things.
+            Sources: <a href = "https://www.weforum.org/agenda/2022/02/microgravity-iss-space-research-astronauts/#:~:text=Astronauts%20also%20conduct%20research%20in,devices%20to%20heat%20transfer%20systems.">Link 1</a>, <a href = "https://www.kennedyspacecenter.com/blog/the-20-most-frequently-asked-questions-about-the-international-space-station#:~:text=An%20astronaut's%20primary%20job%20while,exercise%20program%20to%20remain%20fit">Link 2</a>
+        </p>
+{% endblock %}
